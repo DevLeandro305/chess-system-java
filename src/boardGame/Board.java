@@ -36,6 +36,12 @@ public class Board {
 		return pieces[position.getRow()][position.getColumn()];
 	}
 	
-	
+	/*
+	 * Método para atribuir uma peça a um local no tabuleiro, de acordo com a posição da linha e coluna informada.
+	 */
+	public void placePiece(Piece piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;
+	}
 
 }
