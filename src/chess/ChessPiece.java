@@ -16,6 +16,10 @@ public abstract class ChessPiece extends Piece {
 	public Color getColor() {
 		return color;
 	}
+	
+	public ChessPosition getChessPosition() {
+		return ChessPosition.formPosition(position);
+	}
 
 	//Metodo para verificar se tem uma peça do oponente no caminho do movimento da peça
 	protected boolean isThereOpponentPiece(Position position) {
